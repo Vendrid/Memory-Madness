@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://o2x0spklkb4s"]
+
+[ext_resource type="Script" uid="uid://bqsnpjji2wvnw" path="res://Tests/resource_test.gd" id="1_xp3br"]
+[ext_resource type="Resource" uid="uid://cnoilom0h7ueu" path="res://resources/knife.tres" id="2_gbc6r"]
+
+[node name="ResourceTest" type="Node2D"]
+position = Vector2(490, 341)
+script = ExtResource("1_xp3br")
+weapon = ExtResource("2_gbc6r")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="ImageFiller" type="Node" parent="."]

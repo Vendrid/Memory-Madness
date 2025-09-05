@@ -1,0 +1,25 @@
+[gd_scene load_steps=2 format=3 uid="uid://6a3mn8jhp24o"]
+
+[sub_resource type="GDScript" id="GDScript_wtx87"]
+script/source = "extends Node
+
+
+const PATH: String = \"res://Assets/glitch/\"
+
+
+func _ready() -> void:
+	var dir: DirAccess = DirAccess.open(PATH)
+	
+	var	ifl: ImageFilesList = ImageFilesList.new()
+	
+	if dir:
+		var files: PackedStringArray = dir.get_files()
+		
+		for fn in files:			
+			ifl.add_file_name(PATH + fn)
+			print(fn)
+	ResourceSaver.save(ifl, \"res://resources/image_files_list.tres\")
+"
+
+[node name="ImageFiller" type="Node"]
+script = SubResource("GDScript_wtx87")

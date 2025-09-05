@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Weapon" load_steps=3 format=3 uid="uid://dkpfhpi7u0i7o"]
+
+[ext_resource type="Script" uid="uid://bvpuywtxj5m8q" path="res://resources/weapon.gd" id="1_rwn83"]
+[ext_resource type="Texture2D" uid="uid://omxa41pfxcrv" path="res://Assets/glitch/pineSapling.png" id="2_68dip"]
+
+[resource]
+script = ExtResource("1_rwn83")
+damage = 2
+weapon_name = "axe"
+texture = ExtResource("2_68dip")
+metadata/_custom_type_script = "uid://bvpuywtxj5m8q"
